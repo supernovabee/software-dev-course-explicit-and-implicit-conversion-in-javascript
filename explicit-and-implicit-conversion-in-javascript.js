@@ -27,6 +27,17 @@ if (isValid) {
     console.log("This is valid!");
 }
 
-let age = "25";
+let age = Number("25");     //added Number exlicit conversion so the values 25 and 5 could be added correctly. 
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+
+
+//example of explicit conversion
+let userInput = Number("1945");
+let currentYear = 2025; 
+let timePassed = currentYear - userInput; 
+console.log("It's been " + timePassed + " years since " + userInput);
+
+//example of inplicit conversion
+
+console.log("15"/3 * "6" - 7);  //the strings are converted to numbers before the operations are completed. 
